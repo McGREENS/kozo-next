@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -30,7 +31,15 @@ export default function AboutPage() {
 
       {/* Hero */}
       <section className="about-hero">
-        <div className="mx-auto max-w-[1120px] px-8 pt-48 pb-28 text-center text-white">
+        <Image
+          src="/about.png"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+          style={{ zIndex: 0 }}
+        />
+        <div className="relative z-10 mx-auto max-w-[1120px] px-8 pt-48 pb-28 text-center text-white">
           <p className="about-eyebrow">About Us</p>
           <h1 className="about-hero__title" style={{ fontFamily: displayFont }}>
             We are committed to innovation,
@@ -64,7 +73,14 @@ export default function AboutPage() {
 
       {/* Kōzo Experience */}
       <section className="about-experience-section">
-        <div className="mx-auto max-w-[1120px] px-8 py-28 text-center text-white">
+        <Image
+          src="/about.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          style={{ zIndex: 0 }}
+        />
+        <div className="relative z-10 mx-auto max-w-[1120px] px-8 py-28 text-center text-white">
           <p className="about-eyebrow">Kōzo Experience</p>
           <h2 className="about-section__title" style={{ fontFamily: displayFont }}>
             We are passionate about
@@ -98,7 +114,14 @@ export default function AboutPage() {
           </div>
 
           <div className="relative shrink-0 ml-auto">
-            <div className="kozo-chef__photo-circle" />
+            <div className="kozo-chef__photo-circle">
+              <Image
+                src="/sakon2.jpg"
+                alt="Chef Sakorn Somboon"
+                fill
+                className="object-cover object-top"
+              />
+            </div>
           </div>
         </div>
       </section>

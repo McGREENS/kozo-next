@@ -20,8 +20,8 @@ const optima = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "KŌZO",
-  description: "KŌZO restaurant",
+  title: "Kozogh | The Afro-Asian Experience",
+  description: "An unforgettable Asian dining journey with an African influence that stimulates all senses. The Kōzo dining experience is elegant, sophisticated and exquisite.",
 };
 
 export default function RootLayout({

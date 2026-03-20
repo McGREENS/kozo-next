@@ -54,12 +54,7 @@ body {
 
 .kozo-intro {
   position: relative;
-  background: radial-gradient(
-      1200px 700px at 50% 0%,
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0) 55%
-    ),
-    linear-gradient(to bottom, #070a12, #05060c);
+  background: #05060c;
   padding: 168px 0 140px;
   overflow: hidden;
 }
@@ -113,12 +108,12 @@ body {
 }
 
 .kozo-menu {
-  background: #e7d6b7;
+  background: #F2E4B1;
   color: #1b232b;
 }
 
 .kozo-menu__top {
-  background: #e7d6b7;
+  background: #F2E4B1;
 }
 
 .kozo-menu__eyebrow {
@@ -173,15 +168,23 @@ body {
 
 .kozo-menu__gallery {
   background: #000;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.kozo-menu__gallery::-webkit-scrollbar {
+  display: none;
 }
 
 .kozo-menu__gallery-inner {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  width: max-content;
 }
 
 .kozo-menu__image {
   position: relative;
+  width: 320px;
+  flex-shrink: 0;
   aspect-ratio: 4 / 3;
 }
 
@@ -189,15 +192,11 @@ body {
   .kozo-menu__tabs {
     gap: 40px;
   }
-
-  .kozo-menu__gallery-inner {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 .kozo-look {
   position: relative;
-  background: #e7d6b7;
+  background: #F2E4B1;
   overflow: hidden;
 }
 
@@ -217,8 +216,14 @@ body {
   border-radius: 2px;
   border: none;
   cursor: pointer;
-  background: #102430;
-  color: #f7f5f0;
+  background: #A0D8B3;
+  color: #1b232b;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.kozo-look__button:hover {
+  background: #8ecfa1;
 }
 
 .kozo-look__grid {
@@ -255,18 +260,19 @@ body {
 
 .kozo-chef {
   position: relative;
-  background: #e7d6b7;
+  background: #F2E4B1;
   overflow: hidden;
 }
 
 .kozo-chef__photo-circle {
-  width: 260px;
-  height: 260px;
+  position: relative;
+  width: 360px;
+  height: 360px;
   border-radius: 999px;
-  background: radial-gradient(circle at 30% 20%, #ffffff, #f4d7a7);
+  overflow: hidden;
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.35),
-    0 0 0 24px rgba(231, 214, 183, 0.9);
+    0 0 0 24px rgba(240, 194, 178, 0.9);
 }
 
 .kozo-chef__eyebrow {
@@ -317,11 +323,12 @@ body {
 }
 
 .kozo-footer {
-  background:
-    radial-gradient(1200px 500px at 50% 60%, rgba(24, 45, 85, 0.35), transparent 70%),
-    radial-gradient(700px 300px at 12% 20%, rgba(255, 255, 255, 0.05), transparent 70%),
-    linear-gradient(to bottom, #0a1730, #09152d);
+  position: relative;
+  overflow: hidden;
   color: rgba(255, 255, 255, 0.85);
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
 }
 
 .kozo-footer__heading {
@@ -334,11 +341,9 @@ body {
 }
 
 .kozo-footer__text {
-  font-family: var(--font-display), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 38px;
-  font-size: clamp(24px, 2.1vw, 34px);
-  line-height: 1.35;
-  letter-spacing: 0.01em;
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.82);
   margin-bottom: 16px;
 }
@@ -376,15 +381,21 @@ body {
 }
 
 .kozo-footer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 28px;
-  line-height: 1;
-  transition: opacity 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .kozo-footer__icon:hover {
-  opacity: 0.78;
+  border-color: var(--kozo-cream);
+  color: var(--kozo-cream);
 }
 
 .kozo-footer__copyright {
@@ -511,8 +522,21 @@ body {
 
 /* Hero */
 .about-hero {
+  position: relative;
   background: linear-gradient(to bottom, #070a12, #0d1520);
-  min-height: 60vh;
+  min-height: 80vh;
+  overflow: hidden;
+}
+
+.about-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 10, 18, 0.65) 0%,
+    rgba(13, 21, 32, 0.75) 100%
+  );
+  z-index: 1;
 }
 
 .about-hero__title {
@@ -536,7 +560,7 @@ body {
 
 /* Pillars */
 .about-pillars {
-  background: #e7d6b7;
+  background: #F2E4B1;
 }
 
 .about-pillars__grid {
@@ -580,9 +604,9 @@ body {
 
 /* Experience */
 .about-experience-section {
-  background:
-    radial-gradient(1100px 600px at 50% 0%, rgba(255, 255, 255, 0.07), transparent 60%),
-    linear-gradient(to bottom, #070a12, #05060c);
+  position: relative;
+  overflow: hidden;
+  background: #05060c;
 }
 
 .about-section__title {
@@ -596,7 +620,7 @@ body {
 
 /* Careers */
 .about-careers {
-  background: #f5ede0;
+  background: #F0C2B2;
 }
 
 .about-careers__title {
@@ -631,14 +655,14 @@ body {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   border-radius: 3px;
-  background: #102430;
-  color: #f7f5f0;
+  background: #F2E4B1;
+  color: #1b232b;
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .about-cta:hover {
-  opacity: 0.85;
+  background: #F0C2B2;
 }
 
 /* ── Contact Page ─────────────────────────────────────────── */
@@ -729,15 +753,15 @@ body {
   border-radius: 3px;
   border: none;
   cursor: pointer;
-  background: var(--kozo-cream);
+  background: #F2E4B1;
   color: #1b232b;
   font-family: inherit;
   font-weight: 600;
-  transition: opacity 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .contact-submit:hover {
-  opacity: 0.88;
+  background: #F0C2B2;
 }
 
 .contact-hero__right {

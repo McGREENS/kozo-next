@@ -1,18 +1,14 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import HeroSlideshow from "./components/HeroSlideshow";
+import MenuSection from "./components/MenuSection";
 
 export default function Home() {
   return (
     <div>
       <section className="kozo-hero">
-        <Image
-          src="/hero.JPG"
-          alt=""
-          fill
-          priority
-          className="object-cover object-center"
-        />
+        <HeroSlideshow />
 
         <Navbar />
 
@@ -35,7 +31,7 @@ export default function Home() {
               <div className="mt-8 flex justify-center">
                 <a
                   href="#"
-                  className="rounded-[3px] bg-[var(--kozo-cream)] px-5 py-2 text-[12px] font-semibold tracking-wide text-black/80 shadow-[0_6px_18px_rgba(0,0,0,0.28)] transition hover:brightness-95"
+                  className="rounded-[3px] bg-[#F2E4B1] px-5 py-2 text-[12px] font-semibold tracking-wide text-black/80 shadow-[0_6px_18px_rgba(0,0,0,0.28)] transition hover:bg-[#F0C2B2]"
                 >
                   Explore Menu
                 </a>
@@ -46,6 +42,13 @@ export default function Home() {
       </section>
 
       <section className="kozo-intro" aria-label="KŌZO intro">
+        <Image
+          src="/about.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          style={{ zIndex: 0 }}
+        />
         <div className="kozo-intro__circle" aria-hidden="true">
           <Image
             src="/kozo-circl.png"
@@ -56,7 +59,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="mx-auto max-w-[1120px] px-8">
+        <div className="relative z-10 mx-auto max-w-[1120px] px-8">
           <div className="mx-auto max-w-[980px] text-center text-white">
             <h2
               className="kozo-intro__title"
@@ -81,7 +84,7 @@ export default function Home() {
             <div className="mt-10">
               <a
                 href="#"
-                className="rounded-[3px] border border-[var(--kozo-cream)] px-6 py-3 text-[12px] font-semibold tracking-widest text-[var(--kozo-cream)] uppercase transition hover:bg-[var(--kozo-cream)] hover:text-black/80"
+                className="rounded-[3px] border border-[#F2E4B1] px-6 py-3 text-[12px] font-semibold tracking-widest text-[#F2E4B1] uppercase transition hover:bg-[#F0C2B2] hover:border-[#F0C2B2] hover:text-black/80"
               >
                 Our Community
               </a>
@@ -90,72 +93,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="kozo-menu" aria-label="Food and Drinks Menu">
-        <div className="kozo-menu__top">
-          <div className="mx-auto max-w-[1120px] px-8 py-10 text-center">
-            <p className="kozo-menu__eyebrow">Menu</p>
-            <h2
-              className="kozo-menu__title"
-              style={{
-                fontFamily:
-                  "var(--font-display), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
-              }}
-            >
-              Food and Drinks
-            </h2>
-
-            <nav className="kozo-menu__tabs" aria-label="Menu categories">
-              <button className="kozo-menu__tab">Food</button>
-              <button className="kozo-menu__tab">Wine</button>
-              <button className="kozo-menu__tab kozo-menu__tab--active">
-                Cocktails
-              </button>
-            </nav>
-          </div>
-        </div>
-
-        <div className="kozo-menu__gallery">
-          <div className="kozo-menu__gallery-inner">
-            <div className="kozo-menu__image">
-              <Image
-                src="/cocktail-1.jpg"
-                alt="Cocktail 1"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="kozo-menu__image">
-              <Image
-                src="/cocktail-2.jpg"
-                alt="Cocktail 2"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="kozo-menu__image">
-              <Image
-                src="/cocktail-3.jpg"
-                alt="Cocktail 3"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="kozo-menu__image">
-              <Image
-                src="/cocktail-4.jpg"
-                alt="Cocktail 4"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <MenuSection />
 
       <section className="kozo-chef" aria-labelledby="kozo-chef-heading">
         <div className="mx-auto flex max-w-[1120px] items-center gap-14 px-8 py-20">
           <div className="relative shrink-0">
-            <div className="kozo-chef__photo-circle" />
+            <div className="kozo-chef__photo-circle">
+              <Image
+                src="/sakon.JPG"
+                alt="Chef Sakorn Somboon"
+                fill
+                className="object-cover object-top rounded-full"
+              />
+            </div>
           </div>
 
           <div className="max-w-[560px]">
@@ -199,15 +149,20 @@ export default function Home() {
             >
               Take a look
             </h2>
-            <button className="kozo-look__button" type="button">
+            <a
+              href="https://www.instagram.com/kozokigali/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="kozo-look__button"
+            >
               View More
-            </button>
+            </a>
           </div>
 
           <div className="kozo-look__grid">
             <div className="kozo-look__image">
               <Image
-                src="/look-1.jpg"
+                src="/experience-1.JPG"
                 alt="Kōzo lifestyle 1"
                 fill
                 className="object-cover"
@@ -215,7 +170,7 @@ export default function Home() {
             </div>
             <div className="kozo-look__image">
               <Image
-                src="/look-2.jpg"
+                src="/experience-2.JPG"
                 alt="Kōzo lifestyle 2"
                 fill
                 className="object-cover"
@@ -223,7 +178,7 @@ export default function Home() {
             </div>
             <div className="kozo-look__image">
               <Image
-                src="/look-3.jpg"
+                src="/experience-3.JPG"
                 alt="Kōzo lifestyle 3"
                 fill
                 className="object-cover"

@@ -11,14 +11,14 @@ const openPositions = [
   {
     title: "Head Sushi Chef",
     type: "Full-time",
-    location: "Accra, Ghana",
+    location: "Kigali, Rwanda",
     description:
       "We are looking for an experienced Sushi Chef to lead our Japanese kitchen. You will craft exceptional sushi and omakase experiences for our guests.",
   },
   {
     title: "Floor Manager",
     type: "Full-time",
-    location: "Accra, Ghana",
+    location: "Kigali, Rwanda",
     description:
       "Lead our front-of-house team to deliver the elevated Kōzo dining experience. You will oversee service standards, staff training and guest satisfaction.",
   },
@@ -87,11 +87,11 @@ export default function CareersPage() {
             <div className="contact-info">
               <div className="contact-info__block">
                 <p className="contact-info__label">Location</p>
-                <p className="contact-info__value">Accra, Ghana</p>
+                <p className="contact-info__value">17 KN 14 Ave, Kigali</p>
               </div>
               <div className="contact-info__block">
                 <p className="contact-info__label">Contact</p>
-                <p className="contact-info__value">+233 591159312</p>
+                <p className="contact-info__value">0798 979 779</p>
               </div>
             </div>
           </div>

@@ -45,14 +45,12 @@ export default function ContactPage() {
             <div className="contact-info">
               <div className="contact-info__block">
                 <p className="contact-info__label">Contact</p>
-                <p className="contact-info__value">+233 591159312</p>
+                <p className="contact-info__value">0798 979 779</p>
               </div>
               <div className="contact-info__block">
                 <p className="contact-info__label">Based in</p>
                 <p className="contact-info__value">
-                  126 Osu Badu Crescent,
-                  <br />
-                  Accra, Ghana
+                  17 KN 14 Ave, Kigali
                 </p>
               </div>
               <div className="contact-info__block">
