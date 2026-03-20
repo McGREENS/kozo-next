@@ -116,7 +116,7 @@ export default function AboutPage() {
           <div className="relative shrink-0 ml-auto">
             <div className="kozo-chef__photo-circle">
               <Image
-                src="/sakon2.jpg"
+                src="/sakon2.JPG"
                 alt="Chef Sakorn Somboon"
                 fill
                 className="object-cover object-top"
