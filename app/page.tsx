@@ -95,6 +95,22 @@ export default function Home() {
 
       <MenuSection />
 
+      <section className="kozo-founder" aria-labelledby="kozo-founder-heading" style={{ backgroundColor: "#f0c1b1" }}>
+        <div className="mx-auto max-w-[780px] px-8 py-20 text-center">
+          <p className="text-[13px] font-semibold tracking-widest uppercase text-[#b89a5a] mb-6">A Message from Our Founder</p>
+          <blockquote className="space-y-5 text-[15px] leading-[1.85] text-black/75">
+            <p>Step into Kōzo, where vibrant African flavours meet the refined precision of Pan-Asian cuisine through an innovative culinary process that transforms each plate into a masterpiece. Established in 2018, we welcome you into our home—a space that celebrates genuine African hospitality and a cherished farm-to-table tradition. In every city we find ourselves, we integrate with the local supply chain, partnering with community farmers to ensure sustainable, fresh dining that honors both nature and tradition.</p>
+            <p>Under the guidance of Group Executive Chef Sakorn Somboon, our dishes are far more than just food—they are the result of countless hours of innovation, fusing two cultures into every bite. Inspired by the ancient ties that once bound Africa and Asia along historic trade routes like the Silk Road, our menu reflects a modern interpretation of a timeless culinary dialogue. Just as the Silk Road connected continents, exchanging spices, techniques, and traditions, our creations bridge diverse flavours and culinary wisdom to inspire a new era of dining.</p>
+            <p>At Kōzo, every shared plate, well-curated music, and warm smile invites you to explore a journey of taste and innovation. We are excited to bring our unique experience and vibrant flavours to a city near you.</p>
+            <p className="italic text-black/60">Where Cultures Converge and Flavours Inspire.</p>
+          </blockquote>
+          <div className="mt-8">
+            <p className="text-[14px] font-semibold text-black/80">Ramzi Yamusah</p>
+            <p className="text-[12px] tracking-widest uppercase text-[#b89a5a] mt-1">Founder</p>
+          </div>
+        </div>
+      </section>
+
       <section className="kozo-chef" aria-labelledby="kozo-chef-heading">
         <div className="mx-auto flex max-w-[1120px] items-center gap-14 px-8 py-20">
           <div className="relative shrink-0">
