@@ -194,7 +194,7 @@ export default function Home() {
             </div>
             <div className="kozo-look__image">
               <Image
-                src="/TKX07690.JPG"
+                src="/TKX07690.jpg"
                 alt="Kōzo lifestyle 2"
                 fill
                 className="object-cover"
