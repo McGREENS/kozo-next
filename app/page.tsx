@@ -104,9 +104,17 @@ export default function Home() {
             <p>At Kōzo, every shared plate, well-curated music, and warm smile invites you to explore a journey of taste and innovation. We are excited to bring our unique experience and vibrant flavours to a city near you.</p>
             <p className="italic text-black/60">Where Cultures Converge and Flavours Inspire.</p>
           </blockquote>
-          <div className="mt-8">
+          <Image
+            src="/founder-signature.png"
+            alt="Ramzi Yamusah signature"
+            width={180}
+            height={80}
+            className="mt-8 mb-2 opacity-80 mx-auto"
+          />
+          <div className="mt-2">
             <p className="text-[14px] font-semibold text-black/80">Ramzi Yamusah</p>
             <p className="text-[12px] tracking-widest uppercase text-[#b89a5a] mt-1">Founder</p>
+            <p className="text-[12px] tracking-widest uppercase text-[#b89a5a] mt-1">Kōzo</p>
           </div>
         </div>
       </section>
@@ -116,7 +124,7 @@ export default function Home() {
           <div className="relative shrink-0">
             <div className="kozo-chef__photo-circle">
               <Image
-                src="/sakon.JPG"
+                src="/sakon2.JPG"
                 alt="Chef Sakorn Somboon"
                 fill
                 className="object-cover object-top rounded-full"
@@ -178,7 +186,7 @@ export default function Home() {
           <div className="kozo-look__grid">
             <div className="kozo-look__image">
               <Image
-                src="/experience-1.JPG"
+                src="/food-8.JPG"
                 alt="Kōzo lifestyle 1"
                 fill
                 className="object-cover"
@@ -186,7 +194,7 @@ export default function Home() {
             </div>
             <div className="kozo-look__image">
               <Image
-                src="/experience-2.JPG"
+                src="/TKX07690.JPG"
                 alt="Kōzo lifestyle 2"
                 fill
                 className="object-cover"

@@ -194,6 +194,50 @@ body {
   }
 }
 
+.kozo-founder {
+  background: #F2E4B1;
+}
+
+.kozo-founder__eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7a6248;
+  margin-bottom: 28px;
+}
+
+.kozo-founder__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.03em;
+  color: #2a3640;
+}
+
+.kozo-founder__tagline {
+  font-style: italic;
+  color: #1b232b;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+}
+
+.kozo-founder__name {
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #1b232b;
+  margin-top: 4px;
+}
+
+.kozo-founder__title {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7a6248;
+  margin-top: 4px;
+}
+
 .kozo-look {
   position: relative;
   background: #F2E4B1;
