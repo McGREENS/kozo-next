@@ -1,6 +1,5 @@
+import type { Metadata } from "next";
 import ImageProtection from "./components/ImageProtection";
-
-
 import localFont from "next/font/local";
 import "./globals.css";
 
