@@ -1,4 +1,6 @@
-import type { Metadata } from "next";
+import ImageProtection from "./components/ImageProtection";
+
+
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -32,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${optima.variable} antialiased`}>
+        <ImageProtection />
         {children}
       </body>
     </html>
