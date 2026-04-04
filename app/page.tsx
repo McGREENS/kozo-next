@@ -30,7 +30,7 @@ export default function Home() {
               </p>
               <div className="mt-8 flex justify-center">
                 <a
-                  href="#"
+                  href="https://l.instagram.com/?u=https%3A%2F%2F5631821.qrfy.com%2Fp%2FMLHDtw3hW7%3Futm_source%3Dqrcode%26utm_medium%3Dpdf%26utm_campaign%3D37007427%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnSYbBMAiqoGPp-6dmsOuVknLkJyIz9XZ75r3A7plfhXg_iNUiT4GXbk3D3VQ_aem_TrMhPvQF6T8LPIq6BEIEHg&e=AT4DvwrZx_9UfwQZlBa7X6wA1C34KKxaFUHiwVTdXdoBeT9ll5gE2AnbHx5EMofVAk_xPuo37Lf94-Zqrvczxpm8PnNdeG6qZucomNsrIQ"
                   className="rounded-[3px] bg-[#F2E4B1] px-5 py-2 text-[12px] font-semibold tracking-wide text-black/80 shadow-[0_6px_18px_rgba(0,0,0,0.28)] transition hover:bg-[#F0C2B2]"
                 >
                   Explore Menu
