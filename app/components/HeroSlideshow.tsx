@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const heroImages = [
-  "/hero.JPG",
-  "/hero-2.JPG",
-  "/hero-3.JPG",
-  "/hero-4.JPG",
-  "/hero-5.JPG",
-  "/hero-6.JPG",
+  "/hero.webp",
+  "/hero-2.webp",
+  "/hero-3.webp",
+  "/hero-4.webp",
+  "/hero-5.webp",
+  "/hero-6.webp",
 ];
 
 export default function HeroSlideshow() {

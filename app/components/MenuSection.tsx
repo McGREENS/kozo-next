@@ -8,14 +8,14 @@ const displayFont =
 
 const tabs = {
   Food: [
-    "/food-1.JPG", "/food-2.JPG", "/food-3.JPG", "/food-4.JPG",
-    "/food-5.JPG", "/food-6.JPG", "/food-7.JPG", "/food-8.JPG",
-    "/food-9.JPG", "/food-10.JPG",
+    "/food-1.webp", "/food-2.webp", "/food-3.webp", "/food-4.webp",
+    "/food-5.webp", "/food-6.webp", "/food-7.webp", "/food-8.webp",
+    "/food-9.webp", "/food-10.webp",
   ],
-  Wine: ["/wine-1.JPG", "/wine-2.JPG"],
+  Wine: ["/wine-1.webp", "/wine-2.webp"],
   Cocktails: [
-    "/cocktail-1.JPG", "/cocktail-2.JPG", "/cocktail-3.JPG",
-    "/cocktail-4.JPG", "/cocktail-5.JPG",
+    "/cocktail-1.webp", "/cocktail-2.webp", "/cocktail-3.webp",
+    "/cocktail-4.webp", "/cocktail-5.webp",
   ],
 };
 

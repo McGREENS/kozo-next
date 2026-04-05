@@ -46,7 +46,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="about-hero">
         <Image
-          src="/about.png"
+          src="/about.webp"
           alt=""
           fill
           priority
@@ -88,7 +88,7 @@ export default function AboutPage() {
       {/* Kōzo Experience */}
       <section className="about-experience-section">
         <Image
-          src="/about.png"
+          src="/about.webp"
           alt=""
           fill
           className="object-cover object-center"
@@ -130,7 +130,7 @@ export default function AboutPage() {
           <div className="relative shrink-0 ml-auto">
             <div className="kozo-chef__photo-circle">
               <Image
-                src="/sakon2.JPG"
+                src="/sakon2.webp"
                 alt="Chef Sakorn Somboon"
                 fill
                 className="object-cover object-top"

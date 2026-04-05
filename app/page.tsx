@@ -6,14 +6,14 @@ import HeroSlideshow from "./components/HeroSlideshow";
 import MenuSection from "./components/MenuSection";
 
 export const metadata: Metadata = {
-  title: "Kōzo | Afro-Asian Restaurant Kigali",
+  title: "Kōzo Kigali | Afro-Asian Fine Dining & Luxury Restaurant Rwanda",
   description:
-    "Welcome to Kōzo Kigali. Where vibrant African flavours meet Pan-Asian precision. Farm-to-table dining, sushi, and shared plates at 17 KN 14 Ave, Kigali.",
+    "Kozo Kigali — Rwanda's finest Afro-Asian restaurant. Sushi, Pan-Asian cuisine, and African flavours in an elegant farm-to-table setting at 17 KN 14 Ave, Kigali. The best dining experience in Rwanda.",
   alternates: { canonical: "https://www.kozokg.com" },
   openGraph: {
     url: "https://www.kozokg.com",
-    title: "Kōzo | Afro-Asian Restaurant Kigali",
-    description: "Where vibrant African flavours meet Pan-Asian precision. Farm-to-table dining in Kigali.",
+    title: "Kōzo Kigali | Afro-Asian Fine Dining & Luxury Restaurant Rwanda",
+    description: "Rwanda's finest Afro-Asian restaurant. Sushi, farm-to-table fine dining, and African hospitality in Kigali.",
   },
 };
 
@@ -33,8 +33,9 @@ export default function Home() {
             description:
               "Kōzo is Kigali's premier Afro-Asian restaurant. Vibrant African flavours meet Pan-Asian precision in a farm-to-table dining experience.",
             foundingDate: "2018",
-            servesCuisine: ["African", "Asian", "Pan-Asian", "Sushi"],
+            servesCuisine: ["African", "Asian", "Pan-Asian", "Sushi", "Japanese", "Thai", "Fusion", "Farm to Table"],
             priceRange: "$$$",
+            keywords: "Kozo, Kozo Kigali, Kozo Rwanda, Afro-Asian restaurant, luxury restaurant Kigali, fine dining Rwanda, sushi Kigali, Asian restaurant Rwanda",
             address: {
               "@type": "PostalAddress",
               streetAddress: "17 KN 14 Ave",
@@ -82,7 +83,7 @@ export default function Home() {
 
       <section className="kozo-intro" aria-label="KŌZO intro">
         <Image
-          src="/about.png"
+          src="/about.webp"
           alt=""
           fill
           className="object-cover object-center"
@@ -90,7 +91,7 @@ export default function Home() {
         />
         <div className="kozo-intro__circle" aria-hidden="true">
           <Image
-            src="/kozo-circl.png"
+            src="/kozo-circl.webp"
             alt=""
             width={620}
             height={620}
@@ -144,7 +145,7 @@ export default function Home() {
             <p className="italic text-black/60">Where Cultures Converge and Flavours Inspire.</p>
           </blockquote>
           <Image
-            src="/founder-signature.png"
+            src="/founder-signature.webp"
             alt="Ramzi Yamusah signature"
             width={180}
             height={80}
@@ -163,7 +164,7 @@ export default function Home() {
           <div className="relative shrink-0">
             <div className="kozo-chef__photo-circle">
               <Image
-                src="/sakon2.JPG"
+                src="/sakon2.webp"
                 alt="Chef Sakorn Somboon"
                 fill
                 className="object-cover object-top rounded-full"
@@ -225,7 +226,7 @@ export default function Home() {
           <div className="kozo-look__grid">
             <div className="kozo-look__image">
               <Image
-                src="/food-8.JPG"
+                src="/food-8.webp"
                 alt="Kōzo lifestyle 1"
                 fill
                 className="object-cover"
@@ -233,7 +234,7 @@ export default function Home() {
             </div>
             <div className="kozo-look__image">
               <Image
-                src="/TKX07690.jpg"
+                src="/TKX07690.webp"
                 alt="Kōzo lifestyle 2"
                 fill
                 className="object-cover"
@@ -241,7 +242,7 @@ export default function Home() {
             </div>
             <div className="kozo-look__image">
               <Image
-                src="/experience-3.JPG"
+                src="/experience-3.webp"
                 alt="Kōzo lifestyle 3"
                 fill
                 className="object-cover"

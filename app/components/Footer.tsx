@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="kozo-footer" aria-label="Site footer">
       <Image
-        src="/about.png"
+        src="/about.webp"
         alt=""
         fill
         className="object-cover object-center"
@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="kozo-footer__center">
           <div className="kozo-footer__logo-wrap" aria-label="KŌZO logo">
             <Image
-              src="/kozo-logo-mark.png"
+              src="/kozo-logo-mark.webp"
               alt="Kōzo logo mark"
               width={130}
               height={84}

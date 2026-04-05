@@ -29,15 +29,32 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.kozokg.com"),
   title: {
-    default: "Kōzo | The Afro-Asian Experience — Kigali",
+    default: "Kōzo | Afro-Asian & Luxury Restaurant in Kigali, Rwanda",
     template: "%s | Kōzo Kigali",
   },
   description:
-    "Kōzo is Kigali's premier Afro-Asian restaurant. Vibrant African flavours meet Pan-Asian precision in a farm-to-table dining experience. Book your table at 17 KN 14 Ave, Kigali.",
+    "Kōzo is Kigali's most luxurious Afro-Asian restaurant. Vibrant African flavours meet Pan-Asian precision — sushi, farm-to-table fine dining, and warm hospitality at 17 KN 14 Ave, Kigali, Rwanda.",
   keywords: [
-    "Kōzo", "Kozo Kigali", "Afro-Asian restaurant", "African restaurant Kigali",
-    "Asian restaurant Kigali", "farm to table Kigali", "fine dining Kigali",
-    "sushi Kigali", "Pan-Asian cuisine Rwanda", "best restaurant Kigali",
+    // Brand
+    "Kōzo", "Kozo", "Kozo Kigali", "Kozo Rwanda", "Kozo restaurant",
+    // Cuisine type
+    "Afro-Asian restaurant", "Afro Asian restaurant", "African Asian fusion",
+    "Pan-Asian cuisine", "Asian restaurant Kigali", "Asian restaurant Rwanda",
+    "African restaurant Kigali", "African restaurant Rwanda",
+    "sushi Kigali", "sushi Rwanda", "Japanese restaurant Kigali",
+    "Thai restaurant Kigali", "fusion restaurant Kigali",
+    // Luxury / experience
+    "luxury restaurant Kigali", "luxurious restaurant Kigali",
+    "fine dining Kigali", "fine dining Rwanda",
+    "best restaurant Kigali", "best restaurant Rwanda",
+    "upscale restaurant Kigali", "elegant dining Kigali",
+    "romantic restaurant Kigali", "top restaurant Kigali",
+    // Farm to table
+    "farm to table Kigali", "farm to table Rwanda",
+    "sustainable dining Kigali", "organic restaurant Kigali",
+    // Location
+    "restaurant KN 14 Ave", "restaurant Kigali city",
+    "where to eat Kigali", "best place to eat Kigali",
   ],
   authors: [{ name: "Ramzi Yamusah", url: "https://www.kozokg.com" }],
   creator: "Kōzo",
