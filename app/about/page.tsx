@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about Kōzo's story, our farm-to-table philosophy, and our commitment to sustainability, ethics, and local sourcing in Kigali, Rwanda.",
+  alternates: { canonical: "https://www.kozokg.com/about" },
+  openGraph: {
+    url: "https://www.kozokg.com/about",
+    title: "About Kōzo | Our Story & Philosophy",
+    description: "Farm-to-table, sustainable, ethical dining. Discover the Kōzo story in Kigali.",
+  },
+};
+
 
 const displayFont =
   "var(--font-display), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif";

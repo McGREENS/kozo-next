@@ -1,12 +1,51 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeroSlideshow from "./components/HeroSlideshow";
 import MenuSection from "./components/MenuSection";
 
+export const metadata: Metadata = {
+  title: "Kōzo | Afro-Asian Restaurant Kigali",
+  description:
+    "Welcome to Kōzo Kigali. Where vibrant African flavours meet Pan-Asian precision. Farm-to-table dining, sushi, and shared plates at 17 KN 14 Ave, Kigali.",
+  alternates: { canonical: "https://www.kozokg.com" },
+  openGraph: {
+    url: "https://www.kozokg.com",
+    title: "Kōzo | Afro-Asian Restaurant Kigali",
+    description: "Where vibrant African flavours meet Pan-Asian precision. Farm-to-table dining in Kigali.",
+  },
+};
+
 export default function Home() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Restaurant",
+            name: "Kōzo",
+            url: "https://www.kozokg.com",
+            logo: "https://www.kozokg.com/kozo-circl.png",
+            image: "https://www.kozokg.com/og-image.jpg",
+            description:
+              "Kōzo is Kigali's premier Afro-Asian restaurant. Vibrant African flavours meet Pan-Asian precision in a farm-to-table dining experience.",
+            foundingDate: "2018",
+            servesCuisine: ["African", "Asian", "Pan-Asian", "Sushi"],
+            priceRange: "$$$",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "17 KN 14 Ave",
+              addressLocality: "Kigali",
+              addressCountry: "RW",
+            },
+            telephone: "+250798979779",
+            sameAs: ["https://www.instagram.com/kozokigali/"],
+          }),
+        }}
+      />
       <section className="kozo-hero">
         <HeroSlideshow />
 
