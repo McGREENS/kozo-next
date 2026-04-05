@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import ImageProtection from "./components/ImageProtection";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -22,6 +22,10 @@ const optima = localFont({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#1a1a1a",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.kozokg.com"),
   title: {
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   alternates: { canonical: "https://www.kozokg.com" },
   openGraph: {
-    type: "restaurant",
+    type: "website",
     locale: "en_RW",
     url: "https://www.kozokg.com",
     siteName: "Kōzo Kigali",
@@ -60,7 +64,6 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  themeColor: "#1a1a1a",
 };
 
 export default function RootLayout({
