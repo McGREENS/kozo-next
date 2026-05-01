@@ -98,34 +98,6 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Open Positions */}
-      <section className="careers-positions">
-        <div className="mx-auto max-w-[1120px] px-8 py-24">
-          <p className="about-eyebrow about-eyebrow--dark">Open Positions</p>
-          <h2 className="careers-positions__title" style={{ fontFamily: displayFont }}>
-            Current Opportunities
-          </h2>
-          <div className="careers-positions__grid">
-            {openPositions.map((pos) => (
-              <div key={pos.title} className="careers-position">
-                <div className="careers-position__top">
-                  <h3 className="careers-position__title" style={{ fontFamily: displayFont }}>
-                    {pos.title}
-                  </h3>
-                  <div className="careers-position__meta">
-                    <span className="careers-position__tag">{pos.type}</span>
-                    <span className="careers-position__location">{pos.location}</span>
-                  </div>
-                </div>
-                <p className="careers-position__desc">{pos.description}</p>
-                <a href="#" className="careers-position__apply">
-                  Apply Now
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
