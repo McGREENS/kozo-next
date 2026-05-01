@@ -159,7 +159,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="kozo-chef" aria-labelledby="kozo-chef-heading">
+      {/* <section className="kozo-chef" aria-labelledby="kozo-chef-heading">
         <div className="mx-auto flex max-w-[1120px] items-center gap-14 px-8 py-20">
           <div className="relative shrink-0">
             <div className="kozo-chef__photo-circle">
@@ -198,7 +198,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="kozo-look" aria-labelledby="kozo-look-heading">
         <div className="mx-auto flex max-w-[1120px] items-center gap-14 px-8 py-16">
