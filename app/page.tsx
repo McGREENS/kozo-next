@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeroSlideshow from "./components/HeroSlideshow";
 import MenuSection from "./components/MenuSection";
+import EventsSection from "./components/EventsSection";
 
 export const metadata: Metadata = {
   title: "Kōzo Kigali | Afro-Asian Fine Dining & Luxury Restaurant Rwanda",
@@ -123,7 +124,7 @@ export default function Home() {
             </p>
             <div className="mt-10">
               <a
-                href="#"
+                href="https://www.instagram.com/kozokigali/"
                 className="rounded-[3px] border border-[#F2E4B1] px-6 py-3 text-[12px] font-semibold tracking-widest text-[#F2E4B1] uppercase transition hover:bg-[#F0C2B2] hover:border-[#F0C2B2] hover:text-black/80"
               >
                 Our Community
@@ -200,15 +201,20 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="kozo-look" aria-labelledby="kozo-look-heading">
-        <div className="mx-auto flex max-w-[1120px] items-center gap-14 px-8 py-16">
-          <div className="max-w-[320px]">
+      <EventsSection />
+
+      <section style={{ background: "#F2E4B1", overflow: "hidden" }} aria-labelledby="kozo-look-heading">
+        <div className="mx-auto max-w-[1120px] px-6 py-14">
+
+          {/* Header row */}
+          <div className="flex items-center justify-between mb-8">
             <h2
               id="kozo-look-heading"
-              className="kozo-look__title"
+              className="font-normal leading-[1.2]"
               style={{
-                fontFamily:
-                  "var(--font-display), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
+                fontSize: "clamp(28px, 3.2vw, 44px)",
+                color: "#1b232b",
+                fontFamily: "var(--font-display), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif",
               }}
             >
               Take a look
@@ -217,38 +223,39 @@ export default function Home() {
               href="https://www.instagram.com/kozokigali/"
               target="_blank"
               rel="noopener noreferrer"
-              className="kozo-look__button"
+              className="inline-block text-[12px] tracking-[0.12em] uppercase rounded-[2px] px-5 py-2 shrink-0"
+              style={{ background: "#A0D8B3", color: "#1b232b", textDecoration: "none" }}
             >
               View More
             </a>
           </div>
 
-          <div className="kozo-look__grid">
-            <div className="kozo-look__image">
-              <Image
-                src="/food-8.webp"
-                alt="Kōzo lifestyle 1"
-                fill
-                className="object-cover"
-              />
+          {/* Single unified grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {/* Row 1 */}
+            <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#000" }}>
+              <Image src="/food-8.webp" alt="Kōzo food" fill sizes="(max-width:768px) 50vw, 33vw" className="object-cover" />
             </div>
-            <div className="kozo-look__image">
-              <Image
-                src="/TKX07690.webp"
-                alt="Kōzo lifestyle 2"
-                fill
-                className="object-cover"
-              />
+            <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "#000" }}>
+              <Image src="/music-and-friends-3.JPG" alt="Music & Friends" fill sizes="(max-width:768px) 50vw, 33vw" className="object-cover" />
             </div>
-            <div className="kozo-look__image">
-              <Image
-                src="/experience-3.webp"
-                alt="Kōzo lifestyle 3"
-                fill
-                className="object-cover"
-              />
+            <div className="relative overflow-hidden col-span-2 md:col-span-1 md:row-span-2 flex flex-col gap-3" style={{ background: "transparent" }}>
+              <div className="relative overflow-hidden flex-1" style={{ background: "#000", minHeight: "120px" }}>
+                <Image src="/TKX07690.webp" alt="Kōzo experience" fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover" />
+              </div>
+              <div className="relative overflow-hidden flex-1" style={{ background: "#000", minHeight: "120px" }}>
+                <Image src="/coffe-social-2.JPG" alt="Coffee Social" fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover" />
+              </div>
+              <div className="relative overflow-hidden flex-1" style={{ background: "#000", minHeight: "120px" }}>
+                <Image src="/music-and-friends-1.JPG" alt="Music & Friends" fill sizes="(max-width:768px) 100vw, 33vw" className="object-cover" />
+              </div>
+            </div>
+            {/* Row 2 */}
+            <div className="relative overflow-hidden col-span-2" style={{ aspectRatio: "16/9", background: "#000" }}>
+              <Image src="/giants-of-africa-afterparty-2.JPG" alt="Giants of Africa Afterparty" fill sizes="(max-width:768px) 100vw, 66vw" className="object-cover object-top" />
             </div>
           </div>
+
         </div>
       </section>
 

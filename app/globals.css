@@ -244,6 +244,122 @@ img {
   margin-top: 4px;
 }
 
+/* ── Events Section ─────────────────────────────────────────── */
+
+.kozo-events {
+  background: #05060c;
+  color: #fff;
+}
+
+.kozo-events__eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #b89a5a;
+  margin-bottom: 16px;
+}
+
+.kozo-events__title {
+  font-size: clamp(34px, 4vw, 58px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.kozo-events__subtitle {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+.kozo-events__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px 32px;
+}
+
+.kozo-events__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kozo-events__card-images {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+  height: 280px;
+}
+
+.kozo-events__card-img {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+}
+
+.kozo-events__card-img img {
+  transition: transform 0.5s ease;
+}
+
+.kozo-events__card:hover .kozo-events__card-img img {
+  transform: scale(1.04);
+}
+
+.kozo-events__card-body {
+  padding: 0 4px;
+}
+
+.kozo-events__card-name {
+  font-size: clamp(20px, 1.8vw, 26px);
+  font-weight: 400;
+  color: #F2E4B1;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.kozo-events__card-desc {
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.kozo-events__cta {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #F2E4B1;
+  color: #1b232b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.kozo-events__cta:hover {
+  background: #F0C2B2;
+}
+
+@media (max-width: 768px) {
+  .kozo-events__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .kozo-events__card-images {
+    height: 240px;
+  }
+}
+
+/* ── Take a Look ─────────────────────────────────────────── */
+
 .kozo-look {
   position: relative;
   background: #F2E4B1;
@@ -279,7 +395,8 @@ img {
 .kozo-look__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-rows: auto auto;
+  gap: 12px;
   flex: 1 1 auto;
 }
 
@@ -287,6 +404,20 @@ img {
   position: relative;
   aspect-ratio: 3 / 4;
   background: #000;
+  overflow: hidden;
+}
+
+.kozo-look__image img {
+  transition: transform 0.5s ease;
+}
+
+.kozo-look__image:hover img {
+  transform: scale(1.04);
+}
+
+.kozo-look__image--wide {
+  grid-column: span 2;
+  aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 900px) {
@@ -300,11 +431,20 @@ img {
     width: 100%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .kozo-look__image--wide {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 560px) {
   .kozo-look__grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .kozo-look__image--wide {
+    grid-column: span 1;
+    aspect-ratio: 3 / 4;
   }
 }
 
