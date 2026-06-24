@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import MenuModal from "./MenuModal";
 
 const displayFont =
   "var(--font-display), ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif";
@@ -9,6 +10,7 @@ const displayFont =
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -41,7 +43,7 @@ export default function Navbar() {
           >
             <Link className={linkClass} href="/">Home</Link>
             <Link className={linkClass} href="/about">About</Link>
-            <a className={linkClass} href="https://l.instagram.com/?u=https%3A%2F%2F5631821.qrfy.com%2Fp%2FMLHDtw3hW7%3Futm_source%3Dqrcode%26utm_medium%3Dpdf%26utm_campaign%3D37007427%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnSYbBMAiqoGPp-6dmsOuVknLkJyIz9XZ75r3A7plfhXg_iNUiT4GXbk3D3VQ_aem_TrMhPvQF6T8LPIq6BEIEHg&e=AT4DvwrZx_9UfwQZlBa7X6wA1C34KKxaFUHiwVTdXdoBeT9ll5gE2AnbHx5EMofVAk_xPuo37Lf94-Zqrvczxpm8PnNdeG6qZucomNsrIQ" target="_blank" rel="noopener noreferrer">Menu</a>
+            <button className={`${linkClass} bg-transparent border-none cursor-pointer`} style={{ fontFamily: "inherit", fontSize: "inherit", letterSpacing: "inherit", fontWeight: "inherit" }} onClick={() => setMenuOpen(true)}>Menu</button>
           </nav>
 
           {/* Logo */}
@@ -99,7 +101,7 @@ export default function Navbar() {
         >
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/about" onClick={() => setOpen(false)}>About</Link>
-          <a href="https://l.instagram.com/?u=https%3A%2F%2F5631821.qrfy.com%2Fp%2FMLHDtw3hW7%3Futm_source%3Dqrcode%26utm_medium%3Dpdf%26utm_campaign%3D37007427%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnSYbBMAiqoGPp-6dmsOuVknLkJyIz9XZ75r3A7plfhXg_iNUiT4GXbk3D3VQ_aem_TrMhPvQF6T8LPIq6BEIEHg&e=AT4DvwrZx_9UfwQZlBa7X6wA1C34KKxaFUHiwVTdXdoBeT9ll5gE2AnbHx5EMofVAk_xPuo37Lf94-Zqrvczxpm8PnNdeG6qZucomNsrIQ" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Menu</a>
+          <button onClick={() => { setOpen(false); setMenuOpen(true); }} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", fontSize: "inherit", letterSpacing: "inherit", fontWeight: "inherit" }} className="text-black/80">Menu</button>
           <Link href="/careers" onClick={() => setOpen(false)}>Careers</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
           <Link
@@ -113,6 +115,7 @@ export default function Navbar() {
           </Link>
         </div>
       )}
+      {menuOpen && <MenuModal onClose={() => setMenuOpen(false)} />}
     </>
   );
 }
