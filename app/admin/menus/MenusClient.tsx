@@ -125,7 +125,7 @@ export default function MenusClient({ menus: initial }: { menus: Menu[] }) {
                   </div>
                   {current && (
                     <div className="flex items-center gap-3 shrink-0 ml-4">
-                      <a href={`/menus/${current.filename}`} target="_blank" rel="noopener noreferrer"
+                      <a href={`/api/menus/${key}/file`} target="_blank" rel="noopener noreferrer"
                         className="text-[11px] tracking-[0.12em] uppercase px-3 py-1.5 rounded-[3px]"
                         style={{ border: "1px solid rgba(242,228,177,0.3)", color: "#F2E4B1", textDecoration: "none" }}>
                         View

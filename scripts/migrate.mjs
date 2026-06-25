@@ -26,6 +26,7 @@ await db.batch([
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
     category   TEXT UNIQUE NOT NULL,
     filename   TEXT NOT NULL,
+    filedata   TEXT DEFAULT '',
     updated_at TEXT DEFAULT (datetime('now'))
   )`,
 ], "write");

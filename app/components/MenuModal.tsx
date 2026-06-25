@@ -23,7 +23,7 @@ export default function MenuModal({ onClose }: { onClose: () => void }) {
 
   function getUrl(category: string) {
     const m = menus.find((m) => m.category === category);
-    return m ? `/menus/${m.filename}` : null;
+    return m ? `/api/menus/${m.category}/file` : null;
   }
 
   return (
