@@ -28,7 +28,7 @@ export default function MenuSection() {
     <section className="kozo-menu" aria-label="Food and Drinks Menu">
       <div className="kozo-menu__top">
         <div className="mx-auto max-w-[1120px] px-8 py-10 text-center">
-          <p className="kozo-menu__eyebrow">Menu</p>
+          
           <h2 className="kozo-menu__title" style={{ fontFamily: displayFont }}>
             Food and Drinks
           </h2>

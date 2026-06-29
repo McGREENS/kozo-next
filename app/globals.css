@@ -184,7 +184,9 @@ img {
 
 .kozo-menu__gallery-inner {
   display: flex;
+  min-width: 100%;
   width: max-content;
+  justify-content: center;
 }
 
 .kozo-menu__image {
