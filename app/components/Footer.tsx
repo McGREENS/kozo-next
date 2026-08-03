@@ -50,7 +50,9 @@ export default function Footer() {
             <br />
             Lunch: Tues&mdash;Sat, 12pm to 3pm
             <br />
-            Dinner: Tues&mdash;Sat, 6pm to 12am
+            Dinner: Tues&mdash;Thurs, 6pm to 11pm
+            <br />
+            Dinner: Fri&mdash;Sat, 6pm to 12am
             <br />
             Sunday Brunch: 2pm to 10pm
           </p>
